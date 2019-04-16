@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"",
-    "start:prod": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"",
+    "start": "concurrently \"cd backend && nodemon server.js\" \"cd client && npm start\"",
+    "start:prod": "concurrently \"cd backend && nodemon server.js\" \"cd client && npm start\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^4.0.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11"
+
   }
 }
