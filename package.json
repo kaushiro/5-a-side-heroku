@@ -6,12 +6,8 @@
   "scripts": {
     "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"",
     "start:prod": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "engines": {
-    "node": "10.10.3"
-},
   "keywords": [],
   "author": "",
   "license": "ISC",
