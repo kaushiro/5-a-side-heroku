@@ -7,16 +7,16 @@ const logger = require("morgan");
 const playersAPIRouter = require("./routes/playersAPI");
 
 const app = express();
-const API_PORT = process.env.PORT || 3001;
+const API_PORT = 3001;
 app.set('port', API_PORT);
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(logger("dev"));
 // this is our MongoDB database
-const dbRoute = process.env.MONGO_URL || "mongodb+srv://kaushiro:hihello@cluster0-mjdf4.mongodb.net/test?retryWrites=true";
+// const dbRoute = process.env.MONGO_URL || "mongodb+srv://kaushiro:hihello@cluster0-mjdf4.mongodb.net/test?retryWrites=true";
 // connects our back end code with the database
-// const dbRoute = 'mongodb://127.0.0.1:27017/players';
+const dbRoute = 'mongodb://127.0.0.1:27017/players';
 mongoose.connect(
   dbRoute,
   { useNewUrlParser: true }
