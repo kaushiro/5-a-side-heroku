@@ -1,0 +1,21 @@
+#down-logo {
+	width: 4%;
+	height: auto;
+	background: none;
+}
+#start-logo {
+	margin-left: 5%;
+	margin-top: 5%;
+	width: 10%;
+	height: auto;
+	text-shadow: 1px 1px 2px #000, 0 0 1em #4285f4, 0 0 0.2em #4285f4;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.shadowed {
+   -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(10px 10px 10px #fff);
+  filter: drop-shadow(10px 10px 10px #fff);
+}

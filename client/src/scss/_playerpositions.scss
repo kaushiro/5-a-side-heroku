@@ -1,0 +1,44 @@
+.soccerfield-player {
+    display: flex;
+}
+.player-name {
+    font-weight: 200;
+    margin-left: 10%;
+}
+.player-position {
+    margin-left: 5%;
+}
+
+.team-name-color {
+  margin: 10% auto;
+}
+#player-info {
+  margin-left: 3%;
+  display: flex;
+  @media screen and (min-width:667px) {
+      margin-left: 30%;
+      font-size: 1rem;
+      position: relative;
+      left: 100%;
+    } 
+}
+#player-info span {
+  margin-left: 5%;
+}
+#player-info #text {
+  font-weight: bold;
+}
+.bTeam {
+      margin-left: 10%;
+    @media screen and (min-width:667px) {
+      margin-left: 30%;
+    }   
+}
+#player-info #text {
+  font-weight: bold;
+}
+.soccerfield-player {
+    @media screen and (min-width:667px) {
+      margin-left: 30%;
+    } 
+}  

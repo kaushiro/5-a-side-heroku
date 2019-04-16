@@ -1,0 +1,17 @@
+label {
+	margin-bottom: 0;
+	font-size: 140%;
+}
+
+input.invalid {
+  background-color: #ffdddd;
+  position: relative;
+  animation: shake 1s;
+
+}
+
+#name {
+	width: 60%;
+	margin: 0 auto;
+}
+

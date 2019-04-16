@@ -1,0 +1,26 @@
+/*RADIO LABEL */
+#rating-label {
+	display:block;
+}
+.radiolabel {
+	text-shadow: none;
+}
+
+
+/*RADIO SLIDER */
+
+/* Base Theme */
+.slider-radio.base {
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.slider-radio.base input[type=radio]:checked + label,
+.slider-radio.base .sliding-piece {
+    background-color: #585858;
+    border: none;
+    color: white;
+}
+.number {
+	color: 	#989898;
+}

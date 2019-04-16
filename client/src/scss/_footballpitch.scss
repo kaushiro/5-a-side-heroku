@@ -1,0 +1,48 @@
+
+.wrapper {
+  margin-top: 20%;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.soccerfield {
+      
+      display: inline-block;
+      transform:        rotate(90deg);
+      -ms-transform:      rotate(90deg);
+      -moz-transform:     rotate(90deg);
+      -webkit-transform:  rotate(90deg);
+      -o-transform:       rotate(90deg);
+      width: 400px;
+      height: 300px;
+      margin: 0;
+    @media screen and (min-width:667px) {
+      transform:        rotate(180deg);
+      -ms-transform:      rotate(180deg);
+      -moz-transform:     rotate(180deg);
+      -webkit-transform:  rotate(180deg);
+      -o-transform:       rotate(180deg);
+      width: 800px;
+      height: 600px;
+    }   
+}
+.text-field {
+  opacity: 0.8;
+  width: 250px;
+  height: 325px;
+  position: absolute;
+  background: white;
+  top:-3%;
+    @media screen and (min-width:667px) {
+      transform:        rotate(360deg);
+      -ms-transform:      rotate(360deg);
+      -moz-transform:     rotate(360deg);
+      -webkit-transform:  rotate(360deg);
+      -o-transform:       rotate(360deg);
+      top: 15%;
+      width: 500px;
+      height: 400px;
+    }   
+}

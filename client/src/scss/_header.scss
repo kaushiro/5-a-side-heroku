@@ -1,0 +1,19 @@
+.page-header {
+ 	overflow: hidden;
+ 	padding-top: 5%;
+ 	margin: 10% auto 0% auto;
+ 	height: 250px;
+}
+#main-header {
+	text-decoration: none;
+}
+
+.page-header:hover .page-title {
+ -webkit-transform: scale(1.2);
+ transform: scale(1.2);
+ }
+
+.page-title {
+ -webkit-transition: 0.6s ease;
+ transition: 0.6s ease;
+ }

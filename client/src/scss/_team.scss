@@ -1,0 +1,64 @@
+.player-team-1, .player-team-2 {
+	text-shadow: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  background-color: darkgrey;
+}
+
+div.team-one.jumbotron, div.team-two.jumbotron {
+  width: 80%;
+  margin: 0px auto 15px auto;
+}
+
+.target {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 15px auto;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background: #FFF;
+}
+
+.colorPicker {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  vertical-align: middle;
+  width: 250px;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.color:hover {
+  border-color: black;
+}
+.team-name-color {
+  text-shadow: none;
+}
+.team-name {
+  text-shadow: none;
+}
+div.team span {
+  font-size: 1rem;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+#team {
+  width: 60%;
+  margin: 2% auto;
+}
+
+
