@@ -9,6 +9,7 @@ const logger = require("morgan");
 const playersAPIRouter = require("./routes/playersAPI");
 const path = require("path");
 const app = express();
+const MONGODB_URI="mongodb://heroku_tjw9610b:ufiei50scd8noa7od73ubd7qm@ds229186.mlab.com:29186/heroku_tjw9610b";
 app.use(express.static(path.join(__dirname, 'client/build')));
 // this is our MongoDB database
 // const dbRoute = process.env.MONGODB_URI || "mongodb+srv://kaushiro:hihello@cluster0-mjdf4.mongodb.net/test?retryWrites=true";
