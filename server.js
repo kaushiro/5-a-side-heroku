@@ -1,8 +1,9 @@
+const MongoClient = require('mongodb').MongoClient;
 const mongoose = require("mongoose");
 const express = require("express");
 // const router = express.Router();
 require("dotenv").config();
-var cors = require('cors');
+const cors = require('cors');
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const playersAPIRouter = require("./routes/playersAPI");
@@ -13,14 +14,14 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // const dbRoute = process.env.MONGODB_URI || "mongodb+srv://kaushiro:hihello@cluster0-mjdf4.mongodb.net/test?retryWrites=true";
 // connects our back end code with the database
 const API_PORT = process.env.PORT || 3001;
-const dbRoute = process.env.MONGODB_URI ||'mongodb://heroku_tjw9610b:ufiei50scd8noa7od73ubd7qm@ds229186.mlab.com:29186/heroku_tjw9610b';
-mongoose.connect(
+const dbRoute = process.env.MONGODB_URI;
+MongoClient.connect(
   dbRoute,
   { useNewUrlParser: true }
 ).then(() => console.log("Mongodb connected"))
     .catch(err => console.log(err));
 
-let db = mongoose.connection;
+let db = MongoClient.connection;
 
 db.once("open", () => console.log("connected to the database"));
 
