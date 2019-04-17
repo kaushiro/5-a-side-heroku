@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "http://localhost:3001",
+    baseURL: "https://five-a-side-generator.herokuapp.com/",
     headers: {
         Accept: "application/json",
     },
