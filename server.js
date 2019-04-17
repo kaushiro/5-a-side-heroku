@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // const dbRoute = process.env.MONGODB_URI || "mongodb+srv://kaushiro:hihello@cluster0-mjdf4.mongodb.net/test?retryWrites=true";
 // connects our back end code with the database
 const API_PORT = process.env.PORT || 3001;
-const dbRoute = process.env.MONGODB_URI ||'mongodb://user:username1@ds229186.mlab.com:29186/heroku_tjw9610b';
+const dbRoute = process.env.MONGODB_URI ||'mongodb://heroku_tjw9610b:ufiei50scd8noa7od73ubd7qm@ds229186.mlab.com:29186/heroku_tjw9610b';
 mongoose.connect(
   dbRoute,
   { useNewUrlParser: true }

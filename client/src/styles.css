@@ -7194,7 +7194,8 @@ input.invalid {
   float: right; }
 
 .list-group {
-  margin-top: 3%; }
+  margin-top: 3%;
+  margin-bottom: 10%; }
 
 #player-rating {
   margin-left: 5%; }
@@ -7300,6 +7301,9 @@ div.team span {
 #team {
   width: 60%;
   margin: 2% auto; }
+
+input#team.form-control {
+  border: 1px solid black; }
 
 .wrapper {
   margin-top: 20%;

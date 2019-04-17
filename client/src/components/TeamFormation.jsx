@@ -27,8 +27,11 @@ class Teams extends Component {
     return (
 
       <div>
+        <Link to="/reset" className="btn btn-danger btn-reset-end">
+          Reset all        
+        </Link>
         <div className="wrapper">
-     
+               
           <img className="soccerfield" src={fifa} alt="football-pitch"/>
 
           <div className="jumbotron text-field">
@@ -79,10 +82,7 @@ class Teams extends Component {
               </div>
               </div>
           </div>           
-        </div>  
-        <Link to="/reset" className="btn btn-danger btn-reset-end">
-          Reset all        
-        </Link>   
+        </div>   
     </div>
     )
   }
