@@ -7175,6 +7175,9 @@ input.invalid {
   display: block;
   padding: 5%; }
 
+.btn-reset-end {
+  margin-top: 5%; }
+
 .list-group-item {
   padding: 0.3rem;
   text-align: left;

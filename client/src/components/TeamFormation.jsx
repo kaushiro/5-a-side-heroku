@@ -80,7 +80,7 @@ class Teams extends Component {
               </div>
           </div>           
         </div>  
-        <Link to="/reset" className="btn btn-danger btn-reset">
+        <Link to="/reset" className="btn btn-danger btn-reset-end">
           Reset all        
         </Link>   
     </div>

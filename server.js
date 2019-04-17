@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // const dbRoute = process.env.MONGODB_URI || "mongodb+srv://kaushiro:hihello@cluster0-mjdf4.mongodb.net/test?retryWrites=true";
 // connects our back end code with the database
 const API_PORT = process.env.PORT || 3001;
-const dbRoute = process.env.MONGODB_URI ||'mongodb://127.0.0.1:27017/players';
+const dbRoute = process.env.MONGODB_URI ||'mongodb://user:username1@ds229186.mlab.com:29186/heroku_tjw9610b';
 mongoose.connect(
   dbRoute,
   { useNewUrlParser: true }
